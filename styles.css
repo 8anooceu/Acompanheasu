@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.thermometer {
+    margin: 20px auto;
+    width: 50%;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.progress {
+    height: 30px;
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    border-radius: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
