@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento das Doações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Acompanhamento de Doações para Prof. Suely</h1>
+    <div class="thermometer">
+        <div id="progress-bar" class="progress" style="width: 0%"></div>
+    </div>
+    <p>Total Arrecadado: <span id="amount-raised">R$ 0,00</span></p>
+    <p>Meta: R$ 5.000,00</p>
+    <p><strong>Os valores são atualizados a cada 1h ⏳</strong></p>
+    <p><strong>Feito com ❤️ pelo 8º ano 🎓</strong></p>
+
+    <script>
+        // Função para atualizar os dados manualmente
+        function updateDonationData(totalArrecadado) {
+            const meta = 5000;
+            document.getElementById('amount-raised').innerText = `R$ ${totalArrecadado.toFixed(2)}`;
+            const progresso = (totalArrecadado / meta) * 100;
+            document.getElementById('progress-bar').style.width = `${progresso}%`;
+        }
+
+        // Atualiza os dados com um valor inicial (substitua o valor aqui manualmente)
+        updateDonationData(3000);  // Simulação de valor inicial
+    </script>
+</body>
+</html>
